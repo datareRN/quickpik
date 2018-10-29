@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+    <widget xmlns   = "http://www.w3.org/ns/widgets"
+    xmlns:gap   = "http://phonegap.com/ns/1.0"
+    id          = "com.phonegap.quickPik"
+    version     = "1.0.4" >
+    <name>Lotto QuickPIK</name>
+
+    <description>
+       Lotto QuickPik!
+    </description>
+
+    <author href="http://www.cloudzero.co.za" email="info@cloudzero.co.za">
+        VICTIR
+    </author>
+
+    <access origin="*" />
+    <!-- Customize your app and platform with the preference element. -->
+    <!--<preference name="permissions"                value="none"/>-->
+    <preference name="phonegap-version"           value="cli-7.1.0"	 />      <!-- all: current version of PhoneGap -->
+    <preference name="orientation"                value="default" />        <!-- all: default means both landscape and portrait are enabled -->
+    <preference name="target-device"              value="universal" />    
+    <allow-navigation href="*" />
+  <!-- all: possible values handset, tablet, or universal -->
+    <preference name="fullscreen"                 value="true" />           <!-- all: hides the status bar at the top of the screen -->
+    <preference name="SplashScreenDelay"          value="5000" />
+    <preference name="android-minSdkVersion"      value="23" />              <!-- android: MIN SDK version supported on the target device. MAX version is blank by default. -->
+    <preference name="android-targetSdkVersion"   value="24" />
+    <preference name="android-installLocation"    value="auto" />           <!-- android: app install location. 'auto' will choose. 'internalOnly' is device memory. 'preferExternal' is SDCard. -->
+    
+
+    <!-- Core plugins -->
+    <gap:plugin name="cordova-plugin-device" source="npm" />
+    <gap:plugin name="cordova-plugin-orientation" source="npm" />
+    <gap:plugin name="cordova-plugin-camera" source="npm" />
+    <gap:plugin name="cordova-plugin-whitelist" source="npm" />
+    <gap:plugin name="cordova-plugin-geolocation" source="npm" />
+    <gap:plugin name="cordova-plugin-file" source="npm" />
+
+    <!-- Define app icon for each platform. -->
+    <icon src="icon.png" />
+    <icon src="img/36.png"            gap:platform="android"  gap:density="ldpi" />
+    <icon src="img/48.png"            gap:platform="android"  gap:density="mdpi" />
+    <icon src="img/72.png"            gap:platform="android"  gap:density="hdpi" />
+    <icon src="img/96.png"            gap:platform="android"  gap:density="xhdpi" />
+
+    <!-- Define app splash screen for each platform. -->
+    <gap:splash src="res/android/splash240-400.png"   gap:platform="android" gap:density="ldpi" />
+    <gap:splash src="res/android/splash320-480.png"   gap:platform="android" gap:density="mdpi" />
+    <gap:splash src="res/android/splash480-800.png"   gap:platform="android" gap:density="hdpi" />
+    <gap:splash src="res/android/splash720-960.png"   gap:platform="android" gap:density="xhdpi" />
+
+	</widget>
