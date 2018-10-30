@@ -71,10 +71,14 @@
             </div>
     
         </div>
+         <table id="buttons" cellspacing="0" cellpadding="0"> 
+            <tr>
+             <td> <button type="button" id="generate" >Quick Pik!</button></td>
+             <td><button type="button" id="quit"  >Quit</button></td>
+            </tr>
+         </table>
     
-        <button type="button" id="generate" class="clearfix">Quick Pik!</button>
-        <div id="footer" align="center" class="footer" > <a href="https://www.cloudzero.co.za">App by cloudZero</a>
-            </div>
+        <div id="footer" align="center" class="footer" > <a href="https://www.cloudzero.co.za">App by cloudZero</a> </div>
         
 
     </div>
@@ -94,7 +98,11 @@
                     
             }
 
+
+            
+
         var button = document.getElementById("generate");
+        var quitbutton = document.getElementById("quit");
 
         button.addEventListener("click", function () {
 
@@ -136,6 +144,23 @@
     
 
         }); 
+
+        quitbutton.addEventListener("click", function () {
+           
+            if (navigator.app) {
+                navigator.app.exitApp();
+            } else if (navigator.device) {
+                navigator.device.exitApp();
+            } else {
+                window.close();
+            }
+                        
+
+        });
+
+
+
+
 
     });
 }(jQuery));

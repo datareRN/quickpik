@@ -92,11 +92,37 @@ h1 {
     border-radius: 10px;
     font-size: 20px;
     margin: 50px auto;
+    width: 120px;   
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+  
+    font-family: "Chewy";
+    color: #2b2828;
+}
+
+
+#quit {
+    display: block;
+    background-color: #f4f74a;
+    outline: none;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 20px;
+    margin: 50px auto;
     width: 120px;
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
   
     font-family: "Chewy";
     color: #2b2828;
+}
+
+#buttons {
+    border: none;
+    border-collapse: collapse;
+}
+ 
+#buttons td  {
+    border: none;
+    border-collapse: collapse;
 }
 
 #history {
